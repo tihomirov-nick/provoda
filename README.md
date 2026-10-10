@@ -8,7 +8,7 @@ Provoda живёт в строке меню, значка в Dock у него н
 
 Своё приложение пишет в `Sources/Provoda/AppParts.swift`, остальной код в `Sources/Provoda` общий для семьи.
 
-1. Знак. `MenuBarIcon.drawGlyph` рисует его линиями в строке меню, `drawMark` в `scripts/make_icon.swift` рисует его белым на чёрной плитке иконки. В строке меню знак 20 pt высотой на холсте 22 pt, на иконке занимает 80% плитки (рамка его чернил `ProvodaMark.bounds`, те же числа лежат в `scripts/make_icon.swift`, и тест их сверяет), линии растут вместе со знаком. После правки иконку пересобирает `swift scripts/make_icon.swift`.
+1. Знак. `MenuBarIcon.drawGlyph` рисует его линиями в строке меню, `drawMark` в `scripts/make_icon.swift` рисует его белым на чёрной плитке иконки. В строке меню знак 16 pt высотой на холсте 22 pt, как у системных значков, на иконке занимает 80% плитки (рамка его чернил `ProvodaMark.bounds`, те же числа лежат в `scripts/make_icon.swift`, и тест их сверяет), линии растут вместе со знаком. После правки иконку пересобирает `swift scripts/make_icon.swift`.
 2. Главное окошко `MainView`, содержимое чёрной панели под значком. Ширина 276 pt, высота по содержимому.
 3. Раздел настроек `AppSettingsSection` под «Основными» и «Обновлениями». Строки собираются из `SectionTitle`, `SwitchRow`, `Row` с `MenuCapsule` и `Separator`, как в `SettingsWindow.swift`.
 4. Действия меню `AppActions.menuItems()`. Они встают над «Настройки…», разделитель меню ставит само, пункт из замыкания делает `ClosureMenuItem`.

@@ -8,7 +8,7 @@ import ProvodaCore
 // MARK: - 1. The glyph
 
 extension MenuBarIcon {
-    /// The USB trident (`ProvodaMark`) in the menu bar canvas of the new utilities (Glyph.swift): 20 pt tall on a 22 pt
+    /// The USB trident (`ProvodaMark`) in the menu bar canvas of the new utilities (Glyph.swift): 16 pt tall on a 22 pt
     /// canvas, its left edge on a whole pixel, lines of `Glyph.menuLine` in box units, grown with the mark.
     /// scripts/make_icon.swift draws the same mark on the app icon (`drawMark`).
     static func drawGlyph(in ctx: CGContext, box: CGRect) {
