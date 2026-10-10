@@ -1,0 +1,59 @@
+PROVODA
+=======
+
+INSTALLING
+Open Provoda right from this window. It moves itself to the Applications
+folder and restarts from there. Without administrator rights, Provoda goes
+to the Applications folder inside your home folder. Once it runs, its icon
+appears in the menu bar at the top right of the screen.
+
+You can also install Provoda by hand. Drag its icon onto the Applications
+folder next to it and launch Provoda from the Applications folder.
+
+IF macOS WON'T OPEN THE APP
+The app isn't notarized by Apple, so on the first launch macOS may show
+a warning ("cannot verify the developer" or "Apple could not verify it is free
+of malware"). You only need to allow it once.
+
+  • On macOS 15 and later, close the warning with "Done", open System
+    Settings, go to Privacy & Security, scroll down, click "Open Anyway"
+    next to Provoda and confirm.
+
+  • On macOS 14, right-click Provoda in Finder, choose "Open", then click
+    "Open" again in the warning.
+
+  • If that didn't help, drag Provoda onto the Applications folder, open
+    Terminal and run:
+        xattr -dr com.apple.quarantine /Applications/Provoda.app
+
+THE MENU BAR ICON
+A click on the icon opens Provoda's panel. A right click or a Control-click
+opens the menu: settings, checking for updates, About and Quit.
+
+WHAT IT SHOWS
+Provoda's panel lists what is connected over USB and Thunderbolt: the name,
+the protocol and speed, the power when macOS reports it, the maker and the
+type. The list updates by itself. The search field at the bottom looks
+through names, makers, types and speeds. In Settings you can show serial numbers
+and hubs and turn on a notification for every new device.
+
+LANGUAGE
+Provoda works in Russian and English. In Settings (⌘,) choose "Same as
+System", "Русский" or "English". With "Same as System" Provoda takes the
+first suitable language from the list in System Settings > General >
+Language & Region. A new language takes effect after a restart, and the
+"Restart" button appears right under the choice.
+
+UPDATES
+Provoda looks for a new version on GitHub at launch, every three hours and
+after the Mac wakes up. It downloads a new version by itself, checks its
+signature and installs it when Provoda is idle. With "Install updates
+automatically" turned off in Settings, the icon gets a dot instead, and
+Provoda's panel shows a card with "Later" and "Update".
+
+OPEN AT LOGIN
+Provoda opens at login to install updates on time. To stop it, turn off
+"Open at login" in Settings.
+
+REQUIREMENTS
+macOS 14 or later, a Mac with Apple Silicon or Intel.
